@@ -3,56 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Support — Stowly</title>
-  <meta name="description" content="Help and contact for Stowly, the offline PDF compressor for Mac.">
-  <style>
-    :root {
-      --ink: #1c1917;
-      --muted: #57534e;
-      --bg: #f7f4ef;
-      --card: #fffcf8;
-      --accent: #0f766e;
-      --line: #e7e0d6;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    }
-    header, main, footer { max-width: 40rem; margin: 0 auto; padding: 0 1.25rem; }
-    header { padding-top: 3rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
-    .mark {
-      display: inline-block;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      font-size: 0.8rem;
-      color: var(--accent);
-      text-decoration: none;
-    }
-    h1 { font-size: 2rem; line-height: 1.2; margin: 0.6rem 0 0.4rem; }
-    .lead { color: var(--muted); margin: 0; }
-    main { padding-top: 2rem; padding-bottom: 3rem; }
-    h2 { font-size: 1.15rem; margin: 2rem 0 0.6rem; }
-    ul { padding-left: 1.2rem; }
-    a { color: var(--accent); }
-    footer {
-      border-top: 1px solid var(--line);
-      padding: 1.5rem 1.25rem 3rem;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6f3ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1c1917" media="(prefers-color-scheme: dark)">
+  <title>Support — Stowly PDF Compressor</title>
+  <meta name="description" content="Help and contact for Stowly PDF Compressor, the offline PDF compressor for Mac.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <style>html{background:#f6f3ee}@media (prefers-color-scheme:dark){html{background:#1c1917}}</style>
 </head>
 <body>
-  <header>
-    <a class="mark" href="privacy-policy.html">Stowly</a>
-    <h1>Support</h1>
-    <p class="lead">Stowly shrinks PDFs on your Mac. Your files never leave this computer.</p>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="mark" href="index.html">
+        <img src="favicon.svg" alt="" width="23" height="23">
+        Stowly
+      </a>
+      <nav aria-label="Pages">
+        <a href="index.html">Home</a>
+        <a href="support.html" aria-current="page">Support</a>
+        <a href="privacy.html">Privacy</a>
+      </nav>
+    </div>
   </header>
-  <main>
+  <main id="content" class="wrap">
+    <h1>Support</h1>
+    <p class="lead">Stowly PDF Compressor shrinks PDFs on your Mac. Your files never leave this computer.</p>
+    <p class="contact-line">Email <a href="mailto:amroqazzaz@gmail.com">amroqazzaz@gmail.com</a></p>
+
     <h2>How to compress a PDF</h2>
     <ul>
       <li>Open Stowly and drag one or more PDFs into the window, or add them with the file picker.</li>
@@ -78,14 +57,16 @@
     <p>Stowly refuses password-protected PDFs and shows a clear message. It does not ask for, store, or attempt to bypass the password. Remove the password in another app if you want to compress a copy of that file.</p>
 
     <h2>Files and privacy</h2>
-    <p>Compression happens only on your Mac. Stowly does not upload files, does not create an account, and does not collect personal data. For the full policy, see the <a href="privacy-policy.html">Privacy Policy</a>.</p>
+    <p>Compression happens only on your Mac. Stowly does not upload files, does not create an account, and does not collect personal data. For the full policy, see the <a href="privacy.html">Privacy Policy</a>.</p>
 
     <h2>Contact</h2>
-    <p>If something does not work as expected, email <strong>amroqazzaz@gmail.com</strong> and include the macOS version, the Stowly version, and a short description of what happened. Please do not send confidential documents unless you have already agreed to do so.</p>
+    <p>If something does not work as expected, email <a href="mailto:amroqazzaz@gmail.com">amroqazzaz@gmail.com</a> and include the macOS version, the Stowly version, and a short description of what happened. Please do not send confidential documents unless you have already agreed to do so.</p>
     <p>Developer: Dr Amr Qazzaz.</p>
   </main>
-  <footer>
-    <p>© 2026 Dr Amr Qazzaz. <a href="privacy-policy.html">Privacy Policy</a></p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Dr Amr Qazzaz. <a href="privacy.html">Privacy Policy</a></p>
+    </div>
   </footer>
 </body>
 </html>
