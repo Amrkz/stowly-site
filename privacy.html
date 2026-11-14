@@ -3,57 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy — Stowly</title>
-  <meta name="description" content="Stowly does not collect personal data. PDF compression happens only on your Mac.">
-  <style>
-    :root {
-      --ink: #1c1917;
-      --muted: #57534e;
-      --bg: #f7f4ef;
-      --card: #fffcf8;
-      --accent: #0f766e;
-      --line: #e7e0d6;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: var(--bg);
-      color: var(--ink);
-      font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    }
-    header, main, footer { max-width: 40rem; margin: 0 auto; padding: 0 1.25rem; }
-    header { padding-top: 3rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--line); }
-    .mark {
-      display: inline-block;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      font-size: 0.8rem;
-      color: var(--accent);
-      text-decoration: none;
-    }
-    h1 { font-size: 2rem; line-height: 1.2; margin: 0.6rem 0 0.4rem; }
-    .updated { color: var(--muted); margin: 0; font-size: 0.95rem; }
-    main { padding-top: 2rem; padding-bottom: 3rem; }
-    h2 { font-size: 1.15rem; margin: 2rem 0 0.6rem; }
-    p, li { color: var(--ink); }
-    ul { padding-left: 1.2rem; }
-    a { color: var(--accent); }
-    footer {
-      border-top: 1px solid var(--line);
-      padding: 1.5rem 1.25rem 3rem;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-  </style>
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f6f3ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#1c1917" media="(prefers-color-scheme: dark)">
+  <title>Privacy Policy — Stowly PDF Compressor</title>
+  <meta name="description" content="Stowly PDF Compressor does not collect personal data. PDF compression happens only on your Mac.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <style>html{background:#f6f3ee}@media (prefers-color-scheme:dark){html{background:#1c1917}}</style>
 </head>
 <body>
-  <header>
-    <a class="mark" href="support.html">Stowly</a>
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: 10 November 2026</p>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap bar">
+      <a class="mark" href="index.html">
+        <img src="favicon.svg" alt="" width="23" height="23">
+        Stowly
+      </a>
+      <nav aria-label="Pages">
+        <a href="index.html">Home</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+      </nav>
+    </div>
   </header>
-  <main>
+  <main id="content" class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 14 November 2026</p>
     <p>Stowly is an offline PDF compressor for macOS, published by Dr Amr Qazzaz. This policy describes what the app does — and does not do — with your information.</p>
 
     <h2>Data not collected</h2>
@@ -73,6 +49,9 @@
     </ul>
     <p>This information stays on your device. It is not transmitted to the developer.</p>
 
+    <h2>Retention and deletion</h2>
+    <p>That information is kept only on your Mac, and only for as long as you keep it there. Stowly does not store a copy on a server, so the developer has nothing to delete remotely and there is no account to close. Because the app does not collect personal data, there is no consent to withdraw. You can remove the settings, the daily counter, and the local unlock record by uninstalling Stowly or by deleting the data Stowly saved on your Mac. Questions about your information can be sent to <a href="mailto:amroqazzaz@gmail.com">amroqazzaz@gmail.com</a>.</p>
+
     <h2>In-app purchases</h2>
     <p>Stowly offers an optional one-time, non-consumable in-app purchase called Stowly Unlimited, which removes the five-file daily limit. Purchases are processed by Apple through the App Store. Stowly does not receive your payment card details, Apple ID password, or billing address. The developer does not operate a payment server.</p>
 
@@ -86,11 +65,13 @@
     <p>If this policy changes, the updated text will be posted on this page with a new "Last updated" date. Stowly will not begin collecting personal data without an updated policy and, where required, an updated App Store privacy label.</p>
 
     <h2>Contact</h2>
-    <p>Questions about this policy or about Stowly can be sent to <strong>amroqazzaz@gmail.com</strong>.</p>
+    <p>Questions about this policy or about Stowly can be sent to <a href="mailto:amroqazzaz@gmail.com">amroqazzaz@gmail.com</a>.</p>
     <p>Developer: Dr Amr Qazzaz.</p>
   </main>
-  <footer>
-    <p>© 2026 Dr Amr Qazzaz. <a href="support.html">Support</a></p>
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 Dr Amr Qazzaz. <a href="support.html">Support</a></p>
+    </div>
   </footer>
 </body>
 </html>
